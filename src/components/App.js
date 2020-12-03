@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../styles/App.css";
 import { Link, Route, Switch } from "react-router-dom";
-import Location from "./Location";
+import LocationDisplay from "./LocationDisplay";
 function About() {
   return <div>You are on the about page.</div>;
 }
@@ -25,7 +25,7 @@ class App extends Component {
             <Route path="/" exact component={Home} />
             <Route path="/" component={Invalid} />
           </Switch>
-          <Location />
+          <LocationDisplay />
         </div>
       </>
     );
